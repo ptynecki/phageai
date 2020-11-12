@@ -19,7 +19,7 @@ PhageAI is an AI-driven software platform using advanced Machine Learning and Na
 
 ## Table of Contents
 
-[Framework modules](https://github.com/ProteonPharmaceuticals/phageai#framework-modules) | [Usage](https://github.com/ProteonPharmaceuticals/phageai#usage) | [Documentation](https://github.com/ProteonPharmaceuticals/phageai#documentation) | [Installation](https://github.com/ProteonPharmaceuticals/phageai#installation) | [Community and Contributions](https://github.com/ProteonPharmaceuticals/phageai#community-and-contributions) | [Have a question?](https://github.com/ProteonPharmaceuticals/phageai#have-a-question) | [Found a bug?](https://github.com/ProteonPharmaceuticals/phageai#found-a-bug) | [Team](https://github.com/ProteonPharmaceuticals/phageai#team) | [Change log](https://github.com/ProteonPharmaceuticals/phageai#change-log) | [License](https://github.com/ProteonPharmaceuticals/phageai#license) | [Cite](https://github.com/ProteonPharmaceuticals/phageai#cite)
+[Framework modules](https://github.com/ProteonPharmaceuticals/phageai#framework-modules) | [Documentation](https://github.com/ProteonPharmaceuticals/phageai#documentation) | [Installation](https://github.com/ProteonPharmaceuticals/phageai#installation-and-usage) | [Community and Contributions](https://github.com/ProteonPharmaceuticals/phageai#community-and-contributions) | [Have a question?](https://github.com/ProteonPharmaceuticals/phageai#have-a-question) | [Found a bug?](https://github.com/ProteonPharmaceuticals/phageai#found-a-bug) | [Team](https://github.com/ProteonPharmaceuticals/phageai#team) | [Change log](https://github.com/ProteonPharmaceuticals/phageai#change-log) | [License](https://github.com/ProteonPharmaceuticals/phageai#license) | [Cite](https://github.com/ProteonPharmaceuticals/phageai#cite)
 
 ## Framework modules
 
@@ -27,35 +27,55 @@ PhageAI is an AI-driven software platform using advanced Machine Learning and Na
 `taxonomy` - set of methods related with bacteriophage taxonomy research (TBA);  
 `repository` - set of methods related with PhageAI bacteriophage repository (TBA); 
 
-## Usage
-
-We shared numerous examples of using the framework in Jupyter Notebook format (*.ipynb).
-
 ## Documentation
 
 The official technical documentation is hosted on ReadTheDocs: https://phageai.readthedocs.io
 
-## Installation
+## Installation and usage
 
-_PhageAI_ can be installed by running:
+#### PhageAI user account (1/3)
+Create a free user account in [the PhageAI web platform](https://phage.ai) or use an existing one. If you had to create new one, activate your account by activation link which was sent on your mail inbox. After that, log into the platform successfully and click "My profile" on menu (left sidebar). From the "API access" section copy the access token (string) and keep it for the steps below.
+
+#### PhageAI package (2/3)
+
+_PhageAI_ requires Python 3.8.0+ to run and can be installed by running:
 
 ```
 pip install phageai
 ```
 
-It requires Python 3.8.0+ to run. You can also use Conda:
+Alternatively, you also can use the Conda ecosystem:
 
 ```
 conda install -c conda-forge phageai
 ```
 
-#### Install from GitHub
-
-If you can't wait for the latest hotness and want to install from GitHub, use:
+If you can't wait for the latest hotness from the develop branch, then install it directly from the repository:
 
 ```
-pip install git+git://github.com/ProteonPharmaceuticals/phageai.git
+pip install git+git://github.com/ProteonPharmaceuticals/phageai.git@develop
 ```
+
+#### PhageAI execution (3/3)
+
+```python
+from phageai.lifecycle.classifier import LifeCycleClassifier
+
+lcc = LifeCycleClassifier(access_token='<PASTE_YOUR_ACCESS_TOKEN_HERE>')
+lcc.predict(fasta_path='<PASTE_YOUR_FASTA_PATH_HERE>')
+```
+
+Expected output for `MG945357.fasta` bacateriophage sample:
+```json
+{
+    "model_class_label": "Virulent",
+    "prediction_accuracy": "98.94",
+    "gc": "39.47",
+    "sequence_length": 4915
+}
+```
+
+We shared numerous examples of using the framework in Jupyter Notebook format (*.ipynb).
 
 ## Community and Contributions
 
