@@ -98,7 +98,7 @@ Core Developers and Domain Experts who contributing to PhageAI:
 * Piotr Tynecki
 * Joanna Kazimierczak
 * Arkadiusz Guziński
-* Bogusław Zimnoch
+* Bogusław Zimoń
 
 ## Change log
 
@@ -116,4 +116,4 @@ The PhageAI package is released under the under terms of [the MIT License](https
 >
 > Tynecki, P.; Guziński, A.; Kazimierczak, J.; Jadczuk, M.; Dastych, J.; Onisko, A.
 >
-> Bioinformatics 2020, DOI: 10.1101/2020.07.11.198606
+> Bioinformatics 2020, DOI: [10.1101/2020.07.11.198606](https://doi.org/10.1101/2020.07.11.198606)
