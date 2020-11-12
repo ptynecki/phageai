@@ -33,7 +33,7 @@ setup(
     install_requires=dependencies,
     packages=[
         "phageai",
-        "phages2050.lifecycle",
+        "phageai.lifecycle",
     ],
     data_files=glob("examples/*/**"),
     include_package_data=True,
