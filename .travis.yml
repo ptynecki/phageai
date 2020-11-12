@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.8"
+
+before_install:
+  - python --version
+  - pip install -U pytest
+  - pip install codecov
+install:
+  - pip install -r requirements.txt
+
+env:
+  - CODECOV_TOKEN=1dc7e20a-0c19-45ed-9a30-afd6f1c1eb05
+
+script:
+  - pytest --verbose --color=yes phageai/features
+after_success:
+  - codecov
