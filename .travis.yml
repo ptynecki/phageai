@@ -13,6 +13,6 @@ env:
   - CODECOV_TOKEN=1dc7e20a-0c19-45ed-9a30-afd6f1c1eb05
 
 script:
-  - pytest --verbose --color=yes phageai/features
+  - pytest --verbose --color=yes phageai
 after_success:
   - codecov

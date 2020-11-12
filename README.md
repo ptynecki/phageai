@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://phage.ai/static/phageai_logo.svg">
+  <img src="https://pbs.twimg.com/profile_banners/1168677863442268160/1580499452/1500x500">
 </p>
 
 
