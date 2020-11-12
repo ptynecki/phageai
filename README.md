@@ -6,7 +6,7 @@
 PhageAI is an AI-driven software platform using advanced Machine Learning and Natural Language Processing techniques for deeper understanding of the bacteriophages genomics.
 
 
-[![Travis CI](https://travis-ci.com/github/ProteonPharmaceuticals/phageai.svg?branch=master)](https://travis-ci.com/github/ProteonPharmaceuticals/phageai)
+[![Travis CI](https://travis-ci.com/ProteonPharmaceuticals/phageai.svg?branch=main)](https://travis-ci.com/github/ProteonPharmaceuticals/phageai)
 [![codecov](https://codecov.io/gh/ProteonPharmaceuticals/phageai/branch/master/graph/badge.svg)](https://codecov.io/gh/ProteonPharmaceuticals/phageai)
 [![Documentation Status](https://readthedocs.org/projects/phageai/badge/?version=stable)](https://phageai.readthedocs.io/en/stable/?badge=stable)
 [![PyPI version](https://img.shields.io/pypi/v/phageai.svg)](https://pypi.org/project/phageai/)
